@@ -24,7 +24,7 @@ function exercise03c() {
 }
 
 // the function below does not have access to variable B
-// this causes the error. there are two ways you could solve this
+// this causes the error. there are a few ways you could solve this
 function exercise03d() {
     // you could define another variable B here or
     // you could move the variable above below variable A

@@ -1,6 +1,6 @@
-# Example Template
+# Casper's Function Exercises
 
-Welcome to the example worksheet template for Ada workshops. This is designed to be forked by students, cloned to the desktop or to repl.it, and then reuploaded. If you can't figure something else, make sure to re**read** the comments and prompt, **search** any concepts you don't understand or any errors you are having, and **ask** instructors or other students.
+Welcome to the experimental worksheet template for Ada workshops. This is designed to be forked by students, cloned to the desktop or to repl.it, and then reuploaded. If you can't figure something else, make sure to re**read** the comments and prompt, **search** any concepts you don't understand or any errors you are having, and **ask** instructors or other students.
 
 [See instructions](##Process). This will be hard at first until it isn't. You should open the code on your machine (ideally using VS Code). If that doesn't work, you can use repl.it, though you will need to get VS Code working eventually.
 
@@ -34,15 +34,9 @@ git push -u origin main
 ```
 then move onto the next test! However you don't need to do it for this exercise, since we're just getting started and haven't made any changes!
 
-### Exercise 01
-### Exercise 02
-### Exercise 03
-### Exercise 04
-### Exercise 05
-### Exercise 06
-### Exercise 07
-### Exercise 08
-### Exercise 09
+## DON'T WORRY ABOUT THE GIT STUFF THIS TIME
+## Just work in the REPL for now 😎
+### So you can ignore the below
 
 ## Process
 ### Clone
