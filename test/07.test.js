@@ -8,9 +8,9 @@ describe.skip('Exercise 7',()=>{
             expect(exercise07a(5)).to.equal(60);
             expect(exercise07b(2,3)).to.equal(6);
             expect(exercise07b(9,10)).to.equal(90);        
-            expect(exercise07b(5,7)).to.equal(37);
-            expect(exercise07b(4,6)).to.equal(10);
-            expect(exercise07b(14,19)).to.equal(33);        
-            expect(exercise07b(50,73)).to.equal(123);
+            expect(exercise07b(5,7)).to.equal(35);
+            expect(exercise07c(4,6)).to.equal(10);
+            expect(exercise07c(14,19)).to.equal(33);        
+            expect(exercise07c(50,73)).to.equal(123);
         })
 });
