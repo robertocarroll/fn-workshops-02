@@ -1,3 +1,8 @@
+This is another set of function exercises based on Casper's
+https://github.com/adaapp/fn-workshops-01
+
+First draft so might need some more work (RC).
+
 # Casper's Function Exercises
 
 Welcome to the experimental worksheet template for Ada workshops. This is designed to be forked by students, cloned to the desktop or to repl.it, and then reuploaded. If you can't figure something else, make sure to re**read** the comments and prompt, **search** any concepts you don't understand or any errors you are having, and **ask** instructors or other students.
