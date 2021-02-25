@@ -1,33 +1,15 @@
-// javascript doesn't have public and private
-// variables like in other languages, however
-// you can hide data within a function and refer
-// to it using an internal function called a 'closure'
+// This function takes an object as a single argument
+// { id: 1, name: 'T-800', character: 'Assassin'}
+// you need to return a string that says `Hello, my name is {name}`
+// where `{name}` is the name stored in the object
 
-function exercise04(isAuthorised) {
-    let publicData = "Public Stuff"
-
-    function hiddenFunction() {
-        let privateData = "Hidden Stuff"
-        return publicData;
-    }
+function exercise04(robot) {
     
-    // public Data is accessible here
-    // private Data will show as 'undefined'
-    // the function above will have access to both
-    // change it so that it returns the private data
-    // n.b. this data is not at all secret
-    // as someone could just look at the code
-    // however it's isolated from the rest of 
-    // the program
-
-    // this is an if statement, don't worry,
-    // we'll look at these more later
-    // alls it is doing is checking whether
-    // authorisation is passed to this function.
-    if (isAuthorised)
-    { return hiddenFunction() }
-    else
-    { return publicData }
+    // how can you access the properties of the robot object? 
+    // HINT
+    // There's two ways to do it
+    // Once you have that you need to return it as part of a string 
+    return `Hello, my name is .`;
 }
 
 module.exports = exercise04;

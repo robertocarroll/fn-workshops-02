@@ -1,10 +1,12 @@
-// We want to tell the user if it's an integer
-// If not, we want to return the amount to the right of the decimal point as an integer
-function exercise09(number) {
- // is Integer should work, but needs to be fixed
- if (number.iSINTeger) { return "It's an integer!" }
- // there's a few ways to do this. What can you figure out?
- else { return number } 
+// We have an array of objects 
+// each object contains proporties of a car
+// e.g. { id: 1, car_make: "Lincoln", car_model: "Navigator", car_year: 2009 },
+
+function exercise09(inventory) {
+    //you could use a loop and push to a new array 
+    //or perhaps a method like map would help
+
+    
 }
 
 module.exports = exercise09;

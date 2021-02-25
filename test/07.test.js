@@ -1,16 +1,49 @@
 const { expect } = require('chai')
-const { exercise07a, exercise07b, exercise07c } = require('../code/07.js')
+const exercise07 = require('../code/07.js')
 
 describe.skip('Exercise 7',()=>{
-        it('should return x times 12 for exercise07a(), should return y times z for exercise07b(), should return a plus b for exercise07c()',()=> {
-            expect(exercise07a(6)).to.equal(72);
-            expect(exercise07a(2)).to.equal(24);            
-            expect(exercise07a(5)).to.equal(60);
-            expect(exercise07b(2,3)).to.equal(6);
-            expect(exercise07b(9,10)).to.equal(90);        
-            expect(exercise07b(5,7)).to.equal(35);
-            expect(exercise07c(4,6)).to.equal(10);
-            expect(exercise07c(14,19)).to.equal(33);        
-            expect(exercise07c(50,73)).to.equal(123);
+        it('should return an array with only users from a particular city',()=> {
+            expect(exercise07([
+                { name: 'John', city: 'London', born: '2001-04-01' },
+                { name: 'Lenny', city: 'New York', born: '1997-12-11' },
+                { name: 'Andrew', city: 'Boston', born: '1987-02-22' },
+                { name: 'Peter', city: 'Prague', born: '1936-03-24' },
+                { name: 'Anna', city: 'Bratislava', born: '1973-11-18' },
+                { name: 'Albert', city: 'Bratislava', born: '1940-12-11' },
+                { name: 'Adam', city: 'Trnava', born: '1983-12-01' },
+                { name: 'Robert', city: 'Bratislava', born: '1935-05-15' },
+                { name: 'Robert', city: 'Prague', born: '1998-03-14' }
+              ], 'Bratislava')).to.eql([
+                { name: 'Anna', city: 'Bratislava', born: '1973-11-18' },
+                { name: 'Albert', city: 'Bratislava', born: '1940-12-11' },
+                { name: 'Robert', city: 'Bratislava', born: '1935-05-15' }
+              ]);            
+              expect(exercise07([
+                { name: 'John', city: 'London', born: '2001-04-01' },
+                { name: 'Lenny', city: 'New York', born: '1997-12-11' },
+                { name: 'Andrew', city: 'Boston', born: '1987-02-22' },
+                { name: 'Peter', city: 'Prague', born: '1936-03-24' },
+                { name: 'Anna', city: 'Bratislava', born: '1973-11-18' },
+                { name: 'Albert', city: 'Bratislava', born: '1940-12-11' },
+                { name: 'Adam', city: 'Trnava', born: '1983-12-01' },
+                { name: 'Robert', city: 'Bratislava', born: '1935-05-15' },
+                { name: 'Robert', city: 'Prague', born: '1998-03-14' }
+              ], 'Prague')).to.eql([
+                { name: 'Peter', city: 'Prague', born: '1936-03-24' },
+                { name: 'Robert', city: 'Prague', born: '1998-03-14' }
+              ]); 
+              expect(exercise07([
+                { name: 'John', city: 'London', born: '2001-04-01' },
+                { name: 'Lenny', city: 'New York', born: '1997-12-11' },
+                { name: 'Andrew', city: 'Boston', born: '1987-02-22' },
+                { name: 'Peter', city: 'Prague', born: '1936-03-24' },
+                { name: 'Anna', city: 'Bratislava', born: '1973-11-18' },
+                { name: 'Albert', city: 'Bratislava', born: '1940-12-11' },
+                { name: 'Adam', city: 'Trnava', born: '1983-12-01' },
+                { name: 'Robert', city: 'Bratislava', born: '1935-05-15' },
+                { name: 'Robert', city: 'Prague', born: '1998-03-14' }
+              ], 'New York')).to.eql([
+                { name: 'Lenny', city: 'New York', born: '1997-12-11' }
+              ]); 
         })
 });

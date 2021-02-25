@@ -1,13 +1,18 @@
 // In this we want to change a string to a number if 
 // possible, or return that's impossible.
 
-function exercise08(string) {
-  // this looks like it uses valid built-in 
-  // javascript functions, but maybe these need
-  // to be checked? MDN or W3 Schools might help!
-  if (isNotANumber(parseint(string))) {
-    return "That's impossible!"
-  } else { return parseint(string) }
+// This function takes two arguments
+// An array of user objets
+// A city as a string
+// You need to return an array with only the users from that city
+
+const exercise08 = function(userArray, city, nameBeginsWith) {
+  //You could use a loop
+  // Or the built in method
+  // this time you need to filter by multiple properties
+  
+ 
+   
 }
 
 module.exports = exercise08;

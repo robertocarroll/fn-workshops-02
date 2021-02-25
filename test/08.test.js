@@ -2,10 +2,33 @@ const { expect } = require('chai')
 const exercise08 = require('../code/08.js')
 
 describe.skip('Exercise 8',()=>{
-        it('Should return integer from an unchanged string if possible, else alert this',()=> {
-            expect(exercise08("21")).to.equal(21);
-            expect(exercise08("356")).to.equal(356);
-            expect(exercise08("22a")).to.equal(22);
-            expect(exercise08("abc")).to.equal("That's impossible!");
+        it('should return a new array with users from a particular city whose names begin with a particular letter',()=> {
+            expect(exercise08([
+                { name: 'John', city: 'London', born: '2001-04-01' },
+                { name: 'Lenny', city: 'New York', born: '1997-12-11' },
+                { name: 'Andrew', city: 'Boston', born: '1987-02-22' },
+                { name: 'Peter', city: 'Prague', born: '1936-03-24' },
+                { name: 'Anna', city: 'Bratislava', born: '1973-11-18' },
+                { name: 'Albert', city: 'Bratislava', born: '1940-12-11' },
+                { name: 'Adam', city: 'Trnava', born: '1983-12-01' },
+                { name: 'Robert', city: 'Bratislava', born: '1935-05-15' },
+                { name: 'Robert', city: 'Prague', born: '1998-03-14' }
+              ], 'Bratislava', 'A')).to.eql([
+                { name: 'Anna', city: 'Bratislava', born: '1973-11-18' },
+                { name: 'Albert', city: 'Bratislava', born: '1940-12-11' }
+              ]);  
+              expect(exercise08([
+                { name: 'John', city: 'London', born: '2001-04-01' },
+                { name: 'Lenny', city: 'New York', born: '1997-12-11' },
+                { name: 'Andrew', city: 'Boston', born: '1987-02-22' },
+                { name: 'Peter', city: 'Prague', born: '1936-03-24' },
+                { name: 'Anna', city: 'Bratislava', born: '1973-11-18' },
+                { name: 'Albert', city: 'Bratislava', born: '1940-12-11' },
+                { name: 'Adam', city: 'Trnava', born: '1983-12-01' },
+                { name: 'Robert', city: 'Bratislava', born: '1935-05-15' },
+                { name: 'Robert', city: 'Prague', born: '1998-03-14' }
+              ], 'Bratislava', 'R')).to.eql([
+                { name: 'Robert', city: 'Bratislava', born: '1935-05-15' }
+              ]);               
         })
 });

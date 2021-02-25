@@ -1,11 +1,22 @@
 const { expect } = require('chai')
-const { exercise03a,exercise03b,exercise03c,exercise03d } = require('../code/03.js')
+const exercise03 = require('../code/03.js')
 
 describe.skip('Exercise 3',()=>{
-        it("should return var A for 03a & 03b, var B for 03c & 03d",()=> {
-            expect(exercise03a()).to.equal(10);
-            expect(exercise03b()).to.equal(10);
-            expect(exercise03c()).to.equal(20);
-            expect(exercise03d()).to.equal(20);
+        it('should make robot object',()=> {
+            expect(exercise03(1, 'T-800', 'Assassin')).to.eql({ 
+                id: 1, 
+                name: 'T-800', 
+                character: 'Assassin'
+            });
+            expect(exercise03(2, 'Bishop', 'Scientist')).to.eql({ 
+                id: 2, 
+                name: 'Bishop', 
+                character: 'Scientist'
+            });
+            expect(exercise03(3, 'Optimus Prime', 'Leader')).to.eql({ 
+                id: 3, 
+                name: 'Optimus Prime', 
+                character: 'Leader'
+            });
     })
 });

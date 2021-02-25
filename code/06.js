@@ -1,14 +1,16 @@
-// we can define a 'default' value for a function, so if
-// a function is called with no arguments it reverts to a default
-// This needs to work both if an argument is passed, and if it isn't
+// This function takes an array of strings 
+// as a single argument
+// You need to test if the array contains a banana or not
+// If it does return true
+// If it doesn't return false 
 
-const exercise06 = function(name="Darkness, My Old Friend") {
-    // The below string is called a 'template literal'
-    // It's a way of putting a variable into a string
-    // Learning two things in one exercise!
-    // Anyway not going to tell you what to do, check
-    // the tests
-    return `Hi ${name}`
+const exercise06 = function(fruitArray) {
+    // There's lots of ways to achieve this task
+
+    // You could loop through the array 
+    // You could look for a built in method
+    // But watch out what the test is expecting (a boolean) to pass
+
 }
 
 module.exports = exercise06;
